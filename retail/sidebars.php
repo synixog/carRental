@@ -11,38 +11,22 @@
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-    <i class="bi bi-car-front-fill"></i><span>Manage Cars</span><i class="bi bi-chevron-down ms-auto"></i>
+    <i class="bi bi-car-front-fill"></i><span>View Cars</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
     <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="cars/addCars.php">
-        <i class="bi bi-plus-square-fill" style='font-size: 1.2rem'></i><span>Add Car for rent</span>
+        <a href="indexs.php">
+        <i class="bi bi-pencil-square" style='font-size: 1.2rem'></i><span>Retailed Car</span>
         </a>
       </li>
       <li>
-        <a href="cars/updateInfo.php">
-        <i class="bi bi-pencil-square" style='font-size: 1.2rem'></i><span>Update Car Details</span>
-        </a>
-      </li>
-      <li>
-        <a href="cars/carInfo.php">
-        <i class="bi bi-binoculars" style='font-size: 1.2rem'></i><span>Car Info</span>
+        <a href="retailedCar.php">
+        <i class="bi bi-binoculars" style='font-size: 1.2rem'></i><span>view all cars</span>
         </a>
       </li>
     </ul>
   </li><!-- End Components Nav -->
-  <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-journal-text"></i><span>Manage Retailers</span><i class="bi bi-chevron-down ms-auto"></i>
-    </a>
-    <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="retailersInfo/script.php">
-        <i class="bi bi-eyeglasses" style="font-size: 1rem;"></i><span>Retailer Info</span>
-        </a>
-      </li>
-    </ul>
-  </li><!-- End Components Nav -->
+
 
   <li class="nav-heading">Pages</li>
 

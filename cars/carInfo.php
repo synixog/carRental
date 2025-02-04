@@ -23,8 +23,8 @@
                         $sql = mysqli_query($conn, "SELECT * FROM cars");
                         $cars = mysqli_fetch_all($sql, MYSQLI_ASSOC);  
                         
-                        if(isset($_GET['car_id'])) {
-                            $id = $_GET['car_id'];
+                        if(isset($_GET['id'])) {
+                            $id = $_GET['id'];
                             $sql = mysqli_query($conn, "DELETE FROM cars WHERE car_id = '$id'");
                             if($sql) {
                                 echo "<div class='alert alert-success'>Delete car Success</div>";
@@ -38,7 +38,7 @@
                             echo "<td>" . $car['car_id'] . "</td>";
                             echo "<td>" . $car['model'] . "</td>";
                             echo "<td>" . $car['description'] . "</td>";
-                            echo "<td><img src='upload/{$car['img']}' style='width: 40%; height: 50%'/></td>";
+                            echo "<td><img src='../upload/{$car['img']}' style='width: 40%; height: 50%'/></td>";
                             echo "<td>" . $car['price'] . "</td>";
                             echo "<td>
                                 <a href='updateInfo.php?id={$car['car_id']}' class='btn btn-primary'>Edit</a>
